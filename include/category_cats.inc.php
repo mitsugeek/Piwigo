@@ -56,7 +56,7 @@ $query.= '
 if ('recent_cats' != $page['section'])
 {
   $query.= '
-  ORDER BY `rank`';
+  ORDER BY `max_date_last` desc';
 }
 
 $query.= '
